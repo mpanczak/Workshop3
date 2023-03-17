@@ -11,29 +11,13 @@
     <title>Footer</title>
 </head>
 <body>
-</div>
-<!-- End of Main Content -->
-
-<!-- Footer -->
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright © Your Website 2019</span>
+            <span>Copyright &copy; Your Website 2019</span>
         </div>
     </div>
 </footer>
-<!-- End of Footer -->
-
-</div>
-<!-- End of Content Wrapper -->
-
-</div>
-<!-- End of Page Wrapper -->
-
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded" href="#page-top">
-    <i class="fas fa-angle-up"></i>
-</a>
 
 <!-- Logout Modal-->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -55,20 +39,22 @@
 </div>
 
 <!-- Bootstrap core JavaScript-->
-<script src="index_files/jquery.min.js"></script>
-<script src="index_files/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- Core plugin JavaScript-->
-<script src="index_files/jquery.easing.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
 <!-- Custom scripts for all pages-->
-<script src="index_files/sb-admin-2.min.js"></script>
+<script src="js/sb-admin-2.min.js"></script>
 
 <!-- Page level plugins -->
-<script src="index_files/Chart.min.js"></script>
+<script src="vendor/chart.js/Chart.min.js"></script>
 
 <!-- Page level custom scripts -->
-<script src="index_files/chart-area-demo.js"></script>
-<script src="index_files/chart-pie-demo.js"></script>
+<script src="js/demo/chart-area-demo.js"></script>
+<script src="js/demo/chart-pie-demo.js"></script>
+
 </body>
+
 </html>
