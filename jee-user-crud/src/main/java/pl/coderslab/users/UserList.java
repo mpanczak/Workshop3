@@ -17,21 +17,6 @@ public class UserList extends HttpServlet {
         UserDAO userDAO = new UserDAO();
         List<User> userList = new ArrayList<>(Arrays.asList(userDAO.findAll()));
 
-//        User user = new User();
-//        user.setUserName("John Doe");
-//        user.setEmail("john.doe.gmail.com");
-//        user.setPassword("dupa1234");
-//
-//        User user2 = new User();
-//        user2.setId(3);
-//        user2.setUserName("Alice Smith");
-//        user2.setEmail("a.smitch.yahoo.com");
-//        user2.setPassword("coffe1&");
-//
-//        List<User> userList = new ArrayList<>();
-//        userList.add(user);
-//        userList.add(user2);
-
         request.setAttribute("users", userList);
 
         getServletContext()
