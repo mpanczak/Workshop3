@@ -61,25 +61,14 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Tiger Nixon</td>
-                                        <td>nielsen@gmail.com</td>
-                                        <td>Usuń Edit Pokaż</td>
-                                    </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Garrett Winters</td>
-                                        <td>winters@sth</td>
-                                        <td>Usuń Edit Pokaż</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Ashton Cox</td>
-                                        <td>cox@yahooo</td>
-                                        <td>Usuń Edit Pokaż</td>
-                                    </tr>
-                                    <tr>
+                                    <c:forEach items="${users}" var="user">
+                                        <tr>
+                                            <td>${user.id}</td>
+                                            <td>${user.userName}</td>
+                                            <td>${user.email}</td>
+                                            <td>Usuń Edit Pokaż</td>
+                                        </tr>
+                                    </c:forEach>
                                     </tbody>
                                 </table>
                             </div>
