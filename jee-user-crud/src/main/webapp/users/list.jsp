@@ -32,17 +32,59 @@
     <%@ include file="/header.jsp" %>
 
     <div id="content-wrapper" class="d-flex flex-column">
-
         <div id="content">
-
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
             </nav>
 
             <div class="container-fluid">
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    <h1 class="h3 mb-0 text-gray-800">User CRUD</h1>
+                    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                        <i class="fas fa-download fa-sm text-white-50"></i>Lista użytkowników
+                    </a>
+                </div>
+                <div class="card shadow m-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Lista użytkowników</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                    <tr>
+                                        <th>Id</th>
+                                        <th>Nazwa użytkownika</th>
+                                        <th>Email</th>
+                                        <th>Akcja</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Tiger Nixon</td>
+                                        <td>nielsen@gmail.com</td>
+                                        <td>Usuń Edit Pokaż</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Garrett Winters</td>
+                                        <td>winters@sth</td>
+                                        <td>Usuń Edit Pokaż</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Ashton Cox</td>
+                                        <td>cox@yahooo</td>
+                                        <td>Usuń Edit Pokaż</td>
+                                    </tr>
+                                    <tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
