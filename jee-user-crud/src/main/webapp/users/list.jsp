@@ -20,7 +20,8 @@
             <div class="container-fluid">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
                     <h1 class="h3 mb-0 text-gray-800">User CRUD</h1>
-                    <a href="${pageContext.request.contextPath}/user/add" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                    <a href="${pageContext.request.contextPath}/user/add"
+                       class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
                         <i class="fas fa-download fa-sm text-white-50"></i>Dodaj użytkownika
                     </a>
                 </div>
@@ -46,9 +47,11 @@
                                             <td>${user.id}</td>
                                             <td>${user.userName}</td>
                                             <td>${user.email}</td>
-                                            <td><a href="/user/delete?user=${user.id}">Usuń</a>
-                                                Edit
-                                                <a href="/user/show?user=${user.id}">Pokaż</a></td>
+                                            <td>
+                                                <a href="${pageContext.request.contextPath}/user/delete?user=${user.id}">Usuń</a>
+                                                <a href="${pageContext.request.contextPath}/user/edit?user=${user.id}">Edit</a>
+                                                <a href="${pageContext.request.contextPath}/user/show?user=${user.id}">Pokaż</a>
+                                            </td>
                                         </tr>
                                     </c:forEach>
                                     </tbody>
